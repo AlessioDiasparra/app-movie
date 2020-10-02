@@ -27,6 +27,8 @@ function showMovies(movies) {
         const movieEl = document.createElement("div");
         movieEl.classList.add("movie");
 
+        
+
         movieEl.innerHTML = `
             <img
                 src="${IMGPATH + poster_path}"
@@ -57,6 +59,9 @@ function getClassByRate(vote) {
         return "red";
     }
 }
+
+
+
 
 form.addEventListener("submit", (e) => {
     e.preventDefault();
